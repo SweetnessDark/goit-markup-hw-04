@@ -132,7 +132,14 @@ body {
     justify-content: center;
     text-align: center;
     padding: 200px 0;
-    background-image: url('/images/team-work.png');
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url('../images/team-work.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .heading-banner {
@@ -175,7 +182,6 @@ body {
 
 .description {
     display: flex;
-    gap: 30px;
 }
 
 .description li {
@@ -249,7 +255,6 @@ body {
 .description-team {
     display: flex;
     justify-content: space-between;
-    height: 428px;
 }
 
 .description-team-list {
@@ -261,6 +266,7 @@ body {
 .wrapper {
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .name,
@@ -280,12 +286,13 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: var(--color-gray);
+    margin-bottom: 16px;
 }
 
 .link-icon {
     display: flex;
-    justify-content: space-between;
-    padding: 28px 44px 30px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .link-icon a {
@@ -331,8 +338,9 @@ body {
 }
 
 .client-list a {
+    height: 100%;
     display: flex;
-    padding-top: 16px;
+    align-items: center;
     justify-content: center;
 }
 
